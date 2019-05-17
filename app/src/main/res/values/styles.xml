@@ -1,0 +1,25 @@
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.Base" />
+    <!-- Base application theme.
+         Defining this lets values-v21/styles.xml reuse it with changes. -->
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.NoActionBar">
+    <!-- colorPrimary is used, for instance, for the default ActionBar
+         (but not Toolbar) background.
+          We specify the same color for the toolbar background in
+          toolbar.xml.. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+
+    <!-- colorPrimaryDark is used for the status bar (with the
+         battery, clock, etc). -->
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+    <!-- colorAccent is used as the default value for
+         colorControlActivated which is used to tint widgets. -->
+    <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textColorPrimary">@color/text_material_light</item>
+    </style>
+
+</resources>

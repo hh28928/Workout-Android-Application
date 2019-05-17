@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExtraInfo">
+
+
+    <TextView
+        android:id="@+id/Text_Wieght"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:text="Weight: "
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <EditText
+        android:id="@+id/Edit_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Text_Wieght"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter the Weight"
+        android:inputType="number" />
+
+
+    <TextView
+        android:id="@+id/Text_Reps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Edit_weight"
+        android:text="Reps:"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <EditText
+        android:id="@+id/Edit_Reps"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Edit_weight"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter the Reps  "
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/Text_Sets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/Edit_Sets"
+        android:text="Sets:"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <EditText
+        android:id="@+id/Edit_Sets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Edit_Reps"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter the Sets   "
+        android:inputType="number" />
+
+
+    <TextView
+        android:id="@+id/Text_Notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Edit_Sets"
+        android:text="Notes:"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <EditText
+        android:id="@+id/Edit_Notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Edit_Sets"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Any notes"
+        android:inputType="text" />
+
+
+    <Button
+        android:id="@+id/updateValues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="89dp"
+        android:text="Update these Values"
+        android:onClick="UpdatetheValues"/>
+
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme"
+        app:popupTheme="@style/Theme.AppCompat.NoActionBar"
+        app:title="More Information" />
+
+</RelativeLayout>
